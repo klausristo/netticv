@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+    }
+
+:root { scroll-behavior: smooth; 
+}
+
+body, html {
+    background-color: #F8F8F8;
+    color: #333333;
+    font-family: "Roboto", sans-serif;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column; 
+}
+
+    .header {
+        height: 140px;
+        width: 100%; 
+        background-color: #F5A9C0;
+
+        display: flex;
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center; 
+        text-align: center; 
+        padding: 0 10px; 
+        font-family: "Space Mono", monospace;
+    }
+
+        h1 a {
+        text-decoration: none;
+        color: inherit;
+        }
+
+        .nav {
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        width: 100%; 
+        flex-wrap: wrap;
+        }
+
+            .navilaatikko {
+                display: inline-block;
+                padding: 5px 20px; 
+                background-color: #F8F8F8; 
+                color: #333; 
+                text-decoration: none; 
+                border: 2px solid #333; 
+                border-radius: 15px; 
+                text-align: center;
+                transition: background-color 0.3s, color 0.3s; 
+            }
+
+            .nav ul {
+                display: flex; 
+                padding: 8px;
+                margin: 0;
+                list-style-type: none;
+            }
+
+            .nav ul li a {
+                margin: 0 15px; 
+                text-decoration: none;
+                color: inherit;
+            }
+
+            .nav ul li a:hover {
+                background-color: #333333;
+                color: #F8F8F8;
+            }
+            
+            .nav ul li a.active {
+                background-color: #333333; 
+                color: #F8F8F8;
+                border-color: #333333;
+            }
+
+    .content {
+        flex: 1; 
+        padding: 3rem;
+        margin: 0 auto;
+        max-width: 1200px; 
+        width: 100%; 
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center; 
+        text-align: center;
+    }
+
+            .content.video-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 0 auto;
+            }
+
+            .video-wrapper {
+                position: relative;
+                max-width: 80%;
+                height: 0;
+                padding-bottom: 56.25%; 
+            }
+
+            .video-wrapper iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+            }
+
+        .collapsible {
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+            padding: 10px;
+
+            text-align: center;
+            width: 80%;
+            border: none;
+        }
+        
+            .collapsible:hover {
+                background-color: #C4C4C4; 
+                color: #333333; 
+                transition: background-color 0.3s ease;
+            }
+
+            .collapsible:after {
+                content: '▼';
+                font-size: 14px;
+                padding-left: 10px;
+            }
+
+            .collapsible.active:after {
+                content: '▲';
+            }
+
+            .collapsible-content {
+                display: none;
+                overflow: hidden;
+                padding: 10px;
+                
+            }
+
+
+            .collapsible-table {
+                width: 100%;
+                border-collapse: collapse;
+                max-width: 80%;
+                
+            }
+
+            .collapsible-table thead {
+                background-color: #F5A9C0;
+            }
+
+            .collapsible-table tbody {
+                background-color: #fff;
+            }
+
+            .collapsible-table th, .collapsible-table td {
+                padding: 10px;
+                text-align: left;
+                border: 1px solid #ddd;
+            }
+            .collapsible-table tr:nth-child(even) {
+                background-color: #f9f9f9;
+            }
+
+        .image-text-container {
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .responsive-image {
+            width: 100%;
+            height: auto;
+            max-width: 600px; 
+        }
+        
+        .text {
+            margin-top: 1rem;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            font-size: 1rem; 
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            max-width: 80%;
+            margin: 0 auto; 
+            padding: 1rem;
+            background-color: #f4f4f4;
+            border-radius: 8px;
+            width: 90%;
+        }
+        
+            .contact-form label {
+                margin-bottom: 5px;
+                font-weight: bold;
+            }
+            
+            .contact-form input,
+            .contact-form textarea {
+                margin-bottom: 15px;
+                padding: 0.5rem;
+                font-size: 1rem;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+            }
+            
+            .contact-form button {
+                padding: 0.7rem;
+                background-color: #333;
+                color: white;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+            
+            .contact-form button:hover {
+                background-color: #555;
+            }
+        
+        .stt {
+            position: fixed;
+            right: 2rem;
+            bottom: 4rem;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            background: #E0E0E0 url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3Cpath fill='%23333333' d='M352 352c-8.188 0-16.38-3.125-22.62-9.375L192 205.3l-137.4 137.4c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25C368.4 348.9 360.2 352 352 352z'%3E%3C/path%3E%3C/svg%3E") center no-repeat;
+            box-shadow: 0 0.25rem 0.5rem 0 gray;
+            opacity: 0.7;
+        }
+
+            .stt:hover {
+                opacity: 0.8;
+            }
+
+            .stt:focus {
+                opacity: 0.9;
+            }
+
+            .stt:active {
+                opacity: 1;
+            }
+        
+    .footer {
+            height: 40px;
+            width: 100%;
+            background-color: #B0B0B0;
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+    }
+
+            .footer a.social-icon {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 5px;
+                font-size: 40px;
+                width: 60px;
+                height: 40px;
+                transition: background-color 0.3s, opacity 0.3s; 
+            }
+
+            .fa {
+                text-align: center;
+                text-decoration: none;
+            }
+
+            .footer a.social-icon:hover {
+                opacity: 0.7;
+            }
+
+            .fab.fa-linkedin {
+                background: #007bb5;
+                color: white;
+            }
+
+            .fab.fa-imdb {
+                background: #f5c518;
+                color: black;
+            }
+
+
+@media (max-width: 650px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .nav a {
+        font-size: 1.12rem; 
+    }
+    p {
+        font-size: 1.1rem; 
+    }
+
+    .collapsible-table th, .collapsible-table td {
+        font-size: 14px;
+    }
+
+ }
+
+@media only screen and (min-width: 650px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+    .nav a {
+      font-size: 1.25rem;
+    }
+    p {
+      font-size: 1.125rem;
+    }
+    
+    .header {
+      height: 140px;
+    }
+
+
+    .contact-form {
+        padding: 1rem;
+    }
+    
+  }
+  
+  @media only screen and (min-width: 1025px) {
+    h1 {
+      font-size: 1.75rem;
+    }
+    .nav a {
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 1.375rem;
+    }
+    .header {
+      height: 150px;
+    }
+
+  }
+  
