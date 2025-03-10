@@ -71,14 +71,14 @@ body, html {
             }
 
             .nav ul li a:hover {
-                background-color: #333333;
+                background-color: #B0B0B0;
                 color: #F8F8F8;
             }
             
             .nav ul li a.active {
                 background-color: #333333; 
                 color: #F8F8F8;
-                border-color: #333333;
+                border-color: #B0B0B0;
             }
 
     .content {
