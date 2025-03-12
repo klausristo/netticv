@@ -54,12 +54,13 @@
         </a>
     </footer>
 
-    <script>
-        document.querySelector('.collapsible').addEventListener('click', function () {
-            this.classList.toggle('active');
-            const content = this.nextElementSibling;
-            content.style.display = content.style.display === 'block' ? 'none' : 'block';
-        });
-    </script>
+            <script>
+              document.querySelector('.collapsible').addEventListener('click', function () {
+                  this.classList.toggle('active');
+                  const content = this.nextElementSibling;
+                  const isVisible = getComputedStyle(content).display === 'block';
+                  content.style.display = isVisible ? 'none' : 'block';
+              });
+          </script>
 </body>
 </html>
