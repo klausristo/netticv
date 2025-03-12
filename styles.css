@@ -270,9 +270,9 @@ body, html {
                 align-items: center;
                 justify-content: center;
                 margin: 0 15px;
-                font-size: 60px;
-                width: 60px;
-                height: 60px;
+                font-size: 80px;
+                width: 80px;
+                height: 80px;
                 transition: background-color 0.3s, opacity 0.3s; 
             }
 
