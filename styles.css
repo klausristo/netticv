@@ -269,10 +269,10 @@ body, html {
                 display: inline-flex;
                 align-items: center;
                 justify-content: center;
-                margin: 0 5px;
-                font-size: 40px;
+                margin: 0 15px;
+                font-size: 60px;
                 width: 60px;
-                height: 40px;
+                height: 60px;
                 transition: background-color 0.3s, opacity 0.3s; 
             }
 
